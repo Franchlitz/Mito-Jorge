@@ -169,14 +169,13 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
 }
 .imagenes-servicios{
     height: 10rem;
     width: 15rem;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /*---------------------------------------------- MAIN TRABAJOS ----------------------------------------------*/
@@ -218,7 +217,8 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .boton-trabajos{
     display: block;
@@ -252,6 +252,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0rem 2rem;
 }
 .logo-garantia{
