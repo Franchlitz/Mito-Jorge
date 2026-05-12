@@ -1,0 +1,654 @@
+*{
+   margin: 0;
+   box-sizing: border-box; 
+   font-family: "Poppins", sans-serif;
+}
+h4{
+    font-size: 1.5rem;
+}
+/* ---------------------------------------- HEADER ------------------------------------------ */
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.2rem;
+    background-color: #000000ef;
+    flex-wrap: nowrap;
+}
+.logo{
+    height: 9vh;
+}
+.boton-presupuesto{
+    padding: 1rem;
+    border: 3px solid;
+    border-color: #000000;
+    border-radius: 1rem;
+    width: auto;
+    background-color: #ff7b00e5;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+.enlaces-pagina{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    min-width: 0;
+    gap: 4rem;
+    font-size: 2rem;    
+}
+.enlaces-pagina a{
+    color: white;
+    text-decoration: none;
+}
+.sombra-fondo{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7)
+}
+.descripcion-empresa-fondo{
+    background-image: url(./Imagenes/FondoCasco.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+.descripcion-empresa{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6rem;
+    gap: 2rem;
+    background-color: #00000000;
+}
+.cardHeaderLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.card__headerLinkLlamar{
+    border: 3px solid;
+    padding: 1rem 2rem;
+    border-color:#131313f8;
+    width: 20rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 1;
+    text-decoration: none;
+    color: black
+}
+.card__headerLinkWhatsapp{
+    border: 3px solid;
+    padding: 1rem 2rem;
+    border-color:#131313f8;
+    width: 20rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 1;
+    text-decoration: none;
+}
+.boton-img{
+    height: 4vh;
+}
+#llamada{
+    background-color:#ff7b00e5;
+}
+#whatsapp{
+    background-color: #25d36500;
+    color: white;
+    border-color: white;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+}
+h2{
+    color: white;
+    font-size: 2.5rem;
+    color: #ff7b00e5;
+}
+i{
+    color: white;
+    font-size: 2rem;
+}
+span{
+    color:#ff7b00e5;
+}
+
+/* ------------------------------------------ MAIN SERVICIOS ----------------------------------*/
+
+.servicios{
+    background-color: #f3f3f3c7;
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+}
+.contenido-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenido-servicios p{
+    font-size: 1.5rem;
+    color: #ff7b00e5;
+}
+.contenido-servicios h3{
+    font-size: 2.5rem;
+}
+.card-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.cards-servicios p{
+    font-size: 1.2rem;
+}
+.cards-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+.imagenes-servicios{
+    height: 10rem;
+    width: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*---------------------------------------------- MAIN TRABAJOS ----------------------------------------------*/
+.trabajos{
+    background-color:#000000dc;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+.contenido-trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenido-trabajos p{
+    font-size: 1.5rem;
+    color:#ff7b00e5;
+}
+.contenido-trabajos h3{
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+.card-trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-color: #000000;
+    padding: 1rem;
+    color: white;
+}
+.card-trabajos p{
+    font-size: 1.2rem;
+}
+.cards-trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.boton-trabajos{
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem 10rem;
+    background-color:#ff7b00e5;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor:pointer;
+}
+.card__ImgTrabajos{
+    height: 20vh;
+}
+/*------------------------------------------------ MAIN GARANTIA ---------------------------------------------*/
+.garantia{
+    background-color:#f3f3f3c7;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+.card-garantia{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-left: 1px solid;
+    border-color: #00000028;
+}
+.cards-garantia{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+}
+.logo-garantia{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------------------------------------------------------- SECTION CONTACTO --------------------------------------------*/
+.sombra-contacto{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.cardContacto{
+    background-image: url(./Imagenes/FondoConstruccion.jpg);
+    background-repeat: no repeat;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    padding: 3rem 0;
+    color: white;
+    display: flex;
+}
+.cardContacto p{
+    color:#ff7b00e5;
+}
+.cardContacto h3{
+    font-size: 2.5rem;
+    white-space: nowrap;
+}
+.cardForm input, .cardForm textarea{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.25rem;
+}
+.cardForm textarea{
+    height: 8rem;
+    resize: none;
+}
+.cardForm button{
+    background: #ff7b00e5;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 0.25rem;
+}
+.cardForm{
+    margin-right: 20rem;
+}
+.card__fila{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0rem;
+}
+.card__fila input{
+    width: 50%;
+}
+.cardInfo{
+    margin-left: 15rem;
+}
+.cardContainerContacto{
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+}
+.card__info{
+    display: flex;
+    gap: 1rem;
+    padding: 0.50rem;
+}
+.card__info p{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.card__imgInfo{
+    height: 3vh;
+}
+
+/*------------------------------------------------------------ SECTION INFO -----------------------------------------------------*/
+.informacion{
+    background-color:#000000ef;
+    color: #ffffff59;
+    display: flex;
+    gap: 15rem;
+}
+.logo-mito-final{
+    display: flex;
+    height: 20vh;
+    margin-top: 1rem;
+}
+.cardFinal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.cardFinal a{
+    text-decoration: none;
+    color:#ffffff59 ;
+}
+.card__informacion{
+    display: flex;
+    justify-content: center;
+}
+.card__titulo{
+    padding: 1rem;
+}
+.logoCardFinal{
+    height: 8vh;
+}
+/*------------------------------------------------ FOOTER ---------------------------------------------*/
+footer{
+    background-color:#000000ef;
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    color: #ffffff59;
+}
+
+/*----------------------------------------------- MEDIA ---------------------------------------*/
+@media (max-width: 1440px){
+
+    .informacion{
+        gap: 8rem;
+        padding: 2rem;
+    }
+
+    .cardInfo{
+        margin-left: 5rem;
+    }
+
+    .cardForm{
+        margin-right: 5rem;
+    }
+
+    .enlaces-pagina{
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .boton-trabajos{
+        padding: 1rem 5rem;
+    }
+    .cardHeaderLink{
+        margin-top: -3rem;
+    }
+}
+@media (max-width: 1024px){
+    /* HEADER */
+    .encabezado{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .logo{
+        height: 20vh;
+    }
+
+    .enlaces-pagina{
+        gap: 1.5rem;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        margin-top: -4rem;
+    }
+
+    .boton-presupuesto{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* HERO */
+    .descripcion-empresa{
+        padding: 3rem 2rem;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+    i{
+        font-size: 1.2rem;
+    }
+
+    .cardHeaderLink{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .card__headerLinkLlamar,
+    .card__headerLinkWhatsapp{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    /* SERVICIOS */
+    .cards-servicios{
+        flex-wrap: wrap;
+    }
+
+    .card-servicios{
+        width: 45%;
+    }
+
+    /* TRABAJOS */
+    .cards-trabajos{
+        flex-wrap: wrap;
+    }
+
+    .card-trabajos{
+        width: 45%;
+    }
+
+    .boton-trabajos{
+        padding: 1rem 3rem;
+    }
+
+    /* GARANTIA */
+    .cards-garantia{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .card-garantia{
+        width: 45%;
+    }
+
+    /* CONTACTO */
+    .cardContainerContacto{
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .cardInfo{
+        margin-left: 0;
+    }
+
+    .cardForm{
+        margin-right: 0;
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .informacion{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        padding: 2rem;
+        text-align: center;
+    }
+}
+@media (max-width: 768px){
+    h1{
+        font-size: 2rem;
+    }
+
+    .card-servicios,
+    .card-trabajos,
+    .card-garantia{
+        width: 100%;
+    }
+
+    .card__fila{
+        flex-direction: column;
+    }
+
+    .card__fila input{
+        width: 100%;
+    }
+
+    .enlaces-pagina{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 480px){
+    /* HEADER */
+    .logo{
+        height: 20vh;
+    }
+
+    .enlaces-pagina{
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .boton-presupuesto{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    /* HERO */
+    .descripcion-empresa{
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+    i{
+        font-size: 1rem;
+    }
+
+    .cardHeaderLink{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .card__headerLinkLlamar,
+    .card__headerLinkWhatsapp{
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .boton-img{
+        height: 25px;
+    }
+
+    /* SERVICIOS */
+    .contenido-servicios h3,
+    .contenido-trabajos h3,
+    .cardContacto h3{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .cards-servicios,
+    .cards-trabajos,
+    .cards-garantia{
+        flex-direction: column;
+    }
+
+    .card-servicios,
+    .card-trabajos,
+    .card-garantia{
+        width: 100%;
+    }
+
+    .imagenes-servicios{
+        width: 100%;
+        height: auto;
+    }
+    .garantia{
+        padding: 0px;
+    }
+    .cards-garantia{
+        padding: 0px;
+    }
+
+    /* CONTACTO */
+    .cardContacto{
+        height: auto;
+    }
+
+    .cardContainerContacto{
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .cardForm button{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .informacion{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .logo-mito-final{
+        height: 12vh;
+    }
+
+    .logoCardFinal{
+        height: 6vh;
+    }
+}
