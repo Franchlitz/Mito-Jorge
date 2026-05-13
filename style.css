@@ -103,6 +103,9 @@ h4{
     line-height: 1;
     text-decoration: none;
 }
+.card__headerLinkWhatsapp:hover{
+    background-color: #25d366 !important;
+}
 .boton-img{
     height: 4vh;
 }
